@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Perguntas</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <h1>Perguntas e respostas Site</h1>
+        </nav>
+        <div class="container">
+            <h3>Perguntas</h3>
+            <button class="btn"><a href="question">Perguntar</a></button>
+            <div class="clear"></div>
+            <hr>
+            <% questions.forEach((info) => { %>
+                <div class="question">
+                    <div class="title">
+                        <h3><%= info.titulo %> || <%= info.categoria %></h3>
+                    </div>
+                    <div class="description">
+                        <h3>Descrição</h3>
+                        <h4><%= info.descricao %></h4>
+                    </div>
+                    <div class="btnBox">
+                        <form method="post" action="response">
+                            <input type="hidden" name="id" value="<%= info.id %>">
+                            <button class="btn" type="submit">Responder</button>
+                        </form>
+                    </div>
+                </div><br><br>
+            <% }) %>
+        </div>
+    </body>
+</html>

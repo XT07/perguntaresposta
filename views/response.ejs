@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Respostas</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <h1><a href="/">Perguntas e respostas Site</a></h1>
+        </nav>
+        <div class="container">
+            <h2>Pergunta</h2>
+            <% info.forEach((infos) => { %>
+                <h3><%= infos.titulo %></h3>
+                <p><%= infos.descricao %></p>
+                <hr>
+                <form method="post" action="saveresponse">
+                    <label for="response" class="nameInput">Sua resposta</label><br>
+                    <textarea id="response" name="response" placeholder="Coloque a sua resposta aqui aqui ..."></textarea><br><br>
+                    
+                    <input type="hidden" name="perguntaId" value="<%= infos.id %>" />
+                    <input class="btn" type="submit" value="Responder">
+                </form>
+            <% }) %>
+            <hr>
+            <h3>Respostas</h3>
+            <% infoResponse.forEach((response) => { %>
+                <h3>Resposta</h3>
+                <p><%= response.resposta %></5></p>
+            <% }) %>
+            <hr>
+        </div>
+    </body>
+</html>

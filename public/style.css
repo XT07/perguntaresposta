@@ -1,0 +1,109 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    top: 0;
+    width: 100%;
+    background-color: rgb(13, 105, 158);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+select {
+    outline: none;
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    resize: vertical;
+    outline: none;
+}
+
+.question {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.btnBox {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.title {
+    background-color: rgb(13, 105, 158);
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+}
+
+.description {
+    padding-left: 20px;
+}
+
+.inpt {
+    width: 400px;
+    height: 20px;
+    outline: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.btnRight {
+    float: right;
+    background-color: rgb(18, 137, 206);
+    border: none;
+    color: white;
+    width: 100px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btnRight:hover {
+    background-color: rgb(13, 105, 158);
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: rgb(18, 137, 206);
+    border: none;
+    color: white;
+    width: 100px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(13, 105, 158);
+}

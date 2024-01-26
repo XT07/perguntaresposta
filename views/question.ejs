@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Perguntar</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <h1><a href="/">Perguntas e respostas Site</a></h1>
+        </nav>
+        <div class="container">
+            <h3>Perguntar</h3>
+            <hr>
+            <form method="post" action="savequestion">
+                <label for="title" class="nameInput">Título</label><br>
+                <input class="inpt" type="text" name="title" id="title" placeholder="Coloque o título da pergunta aqui ..."><br><br>
+
+                <label for="description" class="nameInput">Descrição</label><br>
+                <textarea id="description" name="description" placeholder="Coloque a descrição da pergunta aqui ..."></textarea><br><br>
+
+                <label for="categoria">Categoria</label><br>
+                <select name="option" id="categoria">
+                    <option value="diversos">diversos</option>
+                    <option value="programação">programação</option>
+                </select><br><br>
+
+                <input class="btn" type="submit" value="Perguntar">
+            </form>
+            <hr>
+        </div>
+    </body>
+</html>
